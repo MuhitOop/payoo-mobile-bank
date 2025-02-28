@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,16 +24,31 @@
       <div class="">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div class="card-body">
+            <form class="card-body">
               <fieldset class="fieldset">
                 <label class="fieldset-label">Account Number</label>
-                <input type="email" class="input" placeholder="Type Your Account Number" />
+                <input
+                  value="13323552865"
+                  id="account-number"
+                  type="number"
+                  class="input"
+                  placeholder="Type Your Account Number"
+                  required
+                />
                 <label class="fieldset-label">PIN</label>
-                <input type="text" class="input" placeholder="Inter Your PIN" />
+                <input
+                  id="account-pin"
+                  type="number"
+                  class="input"
+                  placeholder="Inter Your PIN"
+                  required
+                />
                 <div><a class="link link-hover">Forgot password?</a></div>
-                <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
+                <button id="btn-login" class="btn btn-neutral mt-4">
+                  Login
+                </button>
               </fieldset>
-            </div>
+            </form>
           </div>
         </div>
       </div>

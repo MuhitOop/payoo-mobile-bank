@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@theme{
+    --font-outfit-money : "Outfit", "sans-serif";
+    --color-description-gray : rgba(8, 8, 8, 0.5);
+    --color-btn-primary: #0874F2;
+    --color-input-primary: rgba(8, 8, 8, 0.7);
+}

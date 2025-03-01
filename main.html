@@ -74,7 +74,7 @@
               <img src="./assets/purse1.png" alt="" />
               <h4>Pay Bill</h4>
             </div>
-            <div
+            <div id="transection-box"
               class="box flex flex-col justify-center items-center gap-2 border-2 border-gray-300 rounded-xl p-5"
             >
               <img src="./assets/transaction1.png" alt="" />
@@ -90,7 +90,7 @@
                 <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                   <div class="card-body">
                     <legend>Select Bank</legend>
-                    <select class="select">
+                    <select id="allbank" class="select">
                       <option disabled selected>Select Bank</option>
                       <option value="bkash">Bkash</option>
                       <option value="nagod">Nagod</option>
@@ -98,7 +98,7 @@
                     </select>
                     <fieldset class="fieldset">
                       <label class="fieldset-label text-input-primary font-semibold">Bank Account Number</label>
-                      <input type="text" class="input" placeholder="Enter 11 digit account number" />
+                      <input id="account-number" type="text" class="input" placeholder="Enter 11 digit account number" />
                       <label class="fieldset-label text-input-primary font-semibold">Amount to Add</label>
                       <input
                         type="text"
@@ -127,10 +127,9 @@
               <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                   <div class="card-body">
-                    <legend>Select Bank</legend>
                     <fieldset class="fieldset">
                       <label class="fieldset-label text-input-primary font-semibold">Bank Account Number</label>
-                      <input type="text" class="input" placeholder="Enter 11 digit account number" />
+                      <input id="cashOutAcNum" type="text" class="input" placeholder="Enter 11 digit account number" />
                       <label class="fieldset-label text-input-primary font-semibold">CashOut Amount</label>
                       <input
                         type="text"
@@ -152,11 +151,23 @@
               </div>
             </div>
           </section>
+
+          <section id="transection-history" class="hidden">
+            <h1 class="text-2xl font-bold text-red-400 text-center p-3">Transection History</h1>
+            <div id="transection-container">
+
+            </div>
+          </section>
         </section>
       </header>
     </section>
-    <script src="./script/addMoney.js"></script>
-    <script src="./script/toggle.js"></script>
-    <script src="./script/cashOut.js"></script>
+    <!-- <script src="./script/addMoney.js"></script> -->
+    <!-- <script src="./script/toggle.js"></script> -->
+    <script src="./script/toggle-sections.js"></script>
+    <!-- <script src="./script/cashOut.js"></script> -->
+     <script src="./script/cashoutamount.js"></script>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./script/addamount.js"></script>
+    <script src="./script/transectionHistory.js"></script>
   </body>
 </html>

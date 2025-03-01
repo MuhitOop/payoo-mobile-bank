@@ -6,9 +6,14 @@ document.getElementById('add-money').addEventListener('click', (event) => {
     const convertedPin = parseInt(pin)
     const mainBalance = document.getElementById('main-balance').innerText
     const convertedMainBalance = parseFloat(mainBalance);
-    if (convertedPin === 1234) {
-        const sum = convertedMainBalance + convertedAmount 
-        document.getElementById("main-balance").innerText = sum 
+    const accountNumber = document.getElementById('account-number')
+    const convertedAccontNumber = parseInt(accountNumber)
+
+    if (convertedAccontNumber.length === 11) {
+        if (convertedPin === 1234) {
+          const sum = convertedMainBalance + convertedAmount;
+          document.getElementById("main-balance").innerText = sum;
+        }
     } else {
         console.log('pin shothik na')
     }
